@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stress Relief Bubble Pop</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress Relief Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Stress Relief Bubble Pop</h1>
-  <button id="startBtn">Start Game</button>
-  <p id="score">Bubbles popped: 0</p>
-  <div id="gameContainer"></div>
-
+  <h1>Stress Relief Game</h1>
+  <div id="controls">
+    <button id="bubbleBtn">泡泡游戏</button>
+    <button id="zenBtn">禅意粒子</button>
+  </div>
+  <p id="score" class="hidden">泡泡已戳: <span id="scoreValue">0</span></p>
+  <div id="gameContainer" class="hidden"></div>
+  <canvas id="zenCanvas" class="hidden"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
